@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Essence of Praneeth</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for gradients and specific styles not easily done with pure Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* A beautiful, calming gradient background */
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            min-height: 100vh; /* Ensure it covers the full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem; /* Add some padding for smaller screens */
+        }
+
+        /* Custom gradient for text - for a more unique look */
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(45deg, #a7f3d0, #6ee7b7, #34d399); /* Greenish gradient */
+        }
+
+        /* Card hover effect */
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02); /* Lift and slightly enlarge */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+            background-color: rgba(255, 255, 255, 0.15); /* Slightly more opaque */
+        }
+
+        /* Button hover effect */
+        .interactive-button {
+            transition: all 0.3s ease-in-out;
+            background-image: linear-gradient(45deg, #f06292, #ab47bc); /* Pink-purple gradient */
+        }
+
+        .interactive-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            background-image: linear-gradient(45deg, #ab47bc, #f06292); /* Reverse gradient on hover */
+        }
+
+        .interactive-button:active {
+            transform: scale(0.98);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Simple icon styling */
+        .icon {
+            font-size: 2.5rem; /* Larger icons */
+            color: #a78bfa; /* A nice purple accent */
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive adjustments for the main content width */
+        .main-content {
+            max-width: 90%; /* Default max-width */
+        }
+        @media (min-width: 768px) {
+            .main-content {
+                max-width: 800px; /* Max width for larger screens */
+            }
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <div class="main-content bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-8 md:p-12 text-center border border-gray-700 border-opacity-30">
+
+        <!-- Header Section -->
+        <header class="mb-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 gradient-text leading-tight">
+                The Essence of Praneeth
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200">
+                A journey into the beautiful meanings that define a name.
+            </p>
+        </header>
+
+        <!-- Meaning Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-purple-300">Unveiling the Meaning</h2>
+            <p class="text-md md:text-lg leading-relaxed text-gray-300">
+                The name "Praneeth" (प्रणीत) originates from Sanskrit and carries a rich tapestry of meanings. It often signifies someone who is <strong class="text-green-300">calm, humble, and kind</strong>. It also embodies qualities like being <strong class="text-green-300">polite, benevolent, established, written, pleasing, and good</strong>. Essentially, Praneeth represents a soul characterized by serenity, modesty, and a compassionate nature.
+            </p>
+        </section>
+
+        <!-- Interactive Qualities Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-purple-300">Embrace These Qualities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Card 1: Calmness -->
+                <div class="card bg-white bg-opacity-10 p-6 rounded-xl shadow-lg flex flex-col items-center">
+                    <span class="icon" role="img" aria-label="calmness">🧘‍♂️</span>
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-200">Calmness</h3>
+                    <p class="text-gray-300 text-sm">
+                        A serene demeanor, finding peace amidst life's currents.
+                    </p>
+                </div>
+
+                <!-- Card 2: Humility -->
+                <div class="card bg-white bg-opacity-10 p-6 rounded-xl shadow-lg flex flex-col items-center">
+                    <span class="icon" role="img" aria-label="humility">🙏</span>
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-200">Humility</h3>
+                    <p class="text-gray-300 text-sm">
+                        A modest spirit, grounded in appreciation and respect.
+                    </p>
+                </div>
+
+                <!-- Card 3: Kindness -->
+                <div class="card bg-white bg-opacity-10 p-6 rounded-xl shadow-lg flex flex-col items-center">
+                    <span class="icon" role="img" aria-label="kindness">💖</span>
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-200">Kindness</h3>
+                    <p class="text-gray-300 text-sm">
+                        A benevolent heart, extending warmth and compassion to all.
+                    </p>
+                </div>
+
+                <!-- Card 4: Benevolence -->
+                <div class="card bg-white bg-opacity-10 p-6 rounded-xl shadow-lg flex flex-col items-center">
+                    <span class="icon" role="img" aria-label="benevolence">🌟</span>
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-200">Benevolence</h3>
+                    <p class="text-gray-300 text-sm">
+                        A desire to do good, fostering well-being and positive impact.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Interactive Button -->
+        <div class="mb-12">
+            <button id="revealMessageBtn" class="interactive-button px-8 py-4 rounded-full text-xl font-bold shadow-xl hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-pink-300 focus:ring-opacity-75">
+                Click to Reveal a Thought
+            </button>
+            <p id="hiddenMessage" class="mt-6 text-lg text-gray-200 opacity-0 transition-opacity duration-500 ease-in-out">
+                "May your journey be filled with peace, wisdom, and boundless joy."
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-gray-400 text-sm mt-10">
+            <p>&copy; 2025 Praneeth's Digital Space. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // JavaScript for the interactive button
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealBtn = document.getElementById('revealMessageBtn');
+            const hiddenMessage = document.getElementById('hiddenMessage');
+
+            revealBtn.addEventListener('click', () => {
+                // Toggle the visibility of the message
+                if (hiddenMessage.classList.contains('opacity-0')) {
+                    hiddenMessage.classList.remove('opacity-0');
+                    hiddenMessage.classList.add('opacity-100');
+                    revealBtn.textContent = "Hide the Thought";
+                } else {
+                    hiddenMessage.classList.remove('opacity-100');
+                    hiddenMessage.classList.add('opacity-0');
+                    revealBtn.textContent = "Click to Reveal a Thought";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
